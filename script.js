@@ -23,6 +23,12 @@ function copyLink(){
 
 navigator.clipboard.writeText(window.location.href);
 
-alert("Link copied!");
+const btn = document.querySelector(".join-btn");
+
+btn.innerText = "Copied! ✓";
+
+setTimeout(()=>{
+btn.innerText = "Copy Profile Link";
+}, 2000);
 
 }
