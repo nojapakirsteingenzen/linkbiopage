@@ -1,0 +1,372 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* OUTSIDE BACKGROUND */
+
+body{
+background:linear-gradient(
+135deg,
+#161516,
+#ce2c90,
+#e6b9d9
+);
+
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+/* PHONE FRAME */
+
+.phone-frame{
+width:100%;
+max-width:480px;
+background:linear-gradient(
+180deg,
+#ffd6e7,
+#ffc2db,
+#ffb3d6
+);
+
+border-radius:30px;
+overflow:hidden;
+box-shadow:
+0 0 0 10px rgba(0,0,0,0.15),
+0 25px 60px rgba(0,0,0,0.35);
+position:relative;
+}
+
+/* TOP BAR */
+
+.top-bar{
+position:absolute;
+top:15px;
+left:15px;
+right:15px;
+display:flex;
+justify-content:space-between;
+z-index:10;
+}
+
+.top-right{
+display:flex;
+gap:10px;
+}
+
+.icon-btn{
+width:42px;
+height:42px;
+border-radius:50%;
+border:none;
+background:white;
+box-shadow:0 4px 10px rgba(0,0,0,0.25);
+cursor:pointer;
+font-size:18px;
+transition:all 0.25s ease;
+}
+.icon-btn:hover{
+transform:scale(1.15);
+}
+
+/* BANNER */
+
+.banner{
+height:180px;
+background-image:url("banner.jpg");
+background-size:cover;
+background-position:center;
+}
+
+/* PROFILE */
+
+.profile{
+width:130px;
+height:130px;
+border-radius:50%;
+position:absolute;
+top:115px;
+left:50%;
+transform:translateX(-50%);
+border:5px solid white;
+}
+
+/* CONTENT */
+
+.content{
+padding-top:90px;
+padding-bottom:40px;
+text-align:center;
+}
+
+/* USERNAME */
+
+.username{
+font-size:26px;
+font-weight:600;
+margin-top:15px;
+}
+
+/* BIO */
+
+.bio{
+font-size:17px;
+margin:15px 30px;
+line-height:1.5;
+}
+
+/* INSTAGRAM ICON */
+
+.instagram{
+font-size:24px;
+margin-bottom:10px;
+}
+.instagram{
+
+display:inline-flex;
+
+justify-content:center;
+align-items:center;
+
+width:45px;
+height:45px;
+
+margin:15px auto;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.25);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:all 0.25s ease;
+
+text-decoration:none;
+
+}
+
+/* Hover effect */
+
+.instagram:hover{
+
+transform:scale(1.15);
+
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+
+background:#fff0f6;
+
+}
+
+/* Click effect */
+
+.instagram:active{
+
+transform:scale(0.95);
+
+}
+/* LINKS CONTAINER */
+
+.links{
+
+padding:15px 25px;
+display:flex;
+flex-direction:column;
+gap:18px;
+
+}
+
+/* LINK CARD */
+
+.link-card{
+
+background:white;
+padding:18px;
+border-radius:35px;
+text-decoration:none;
+color:black;
+border:2px solid black;
+box-shadow:6px 8px 0px black;
+font-size:16px;
+position:relative;
+transition:
+transform 0.25s ease,
+box-shadow 0.25s ease,
+background 0.25s ease;
+cursor:pointer;
+}
+
+/* DOTS */
+
+.dots{
+position:absolute;
+right:15px;
+top:50%;
+transform:translateY(-50%);
+font-size:18px;
+
+}
+
+/* HOVER EFFECT */
+
+.link-card:hover{
+
+transform:translateY(-6px) scale(1.05);
+box-shadow:
+10px 14px 0px black,
+0 15px 30px rgba(0,0,0,0.3);
+background:#fff0f6;
+}
+
+/* CLICK EFFECT */
+
+.link-card:active{
+transform:translateY(2px) scale(0.98);
+box-shadow:3px 4px 0px black;
+
+}
+
+/* JOIN BUTTON */
+
+.join-btn{
+margin-top:25px;
+padding:16px 28px;
+font-size:16px;
+border:none;
+border-radius:30px;
+background:white;
+box-shadow:0 6px 20px rgba(255,0,128,0.35);
+cursor:pointer;
+transition:all 0.25s ease;
+
+}
+
+/* JOIN BUTTON HOVER */
+
+.join-btn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 12px 30px rgba(255,0,128,0.5);
+
+}
+
+/* JOIN BUTTON CLICK */
+
+.join-btn:active{
+
+transform:scale(0.96);
+
+}
+.custom-footer{
+
+margin-top:30px;
+
+text-align:center;
+
+}
+
+.footer-text{
+
+margin-top:15px;
+
+font-size:14px;
+
+color:#333;
+
+}
+
+.footer-subtext{
+
+font-size:12px;
+
+color:#555;
+
+margin-top:5px;
+
+}
+/* CARD GRID */
+
+.card-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3, 1fr); /* 3 columns */
+
+gap:12px;
+
+padding:15px;
+
+}
+
+/* CARD */
+
+.card{
+
+background:white;
+
+border-radius:16px;
+
+overflow:hidden;
+
+text-decoration:none;
+
+color:black;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+
+transition:all 0.25s ease;
+
+}
+
+/* CARD IMAGE */
+
+.card img{
+
+width:100%;
+
+height:90px; /* smaller image */
+
+object-fit:cover;
+
+}
+
+/* CARD TITLE */
+
+.card-title{
+
+padding:8px;
+
+font-size:13px;
+
+font-weight:500;
+
+text-align:center;
+
+}
+
+/* HOVER */
+
+.card:hover{
+
+transform:translateY(-8px) scale(1.03);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,0.3);
+
+}
+
+/* CLICK */
+
+.card:active{
+
+transform:scale(0.97);
+
+}
